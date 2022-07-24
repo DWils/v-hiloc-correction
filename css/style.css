@@ -21,6 +21,10 @@ header {
     border-bottom: 10px solid #36C4B3
 }
 
+.resa{
+    height: 600px;
+}
+
 .bg-vert-pale {
     background-color: #36C4B340;
 }
