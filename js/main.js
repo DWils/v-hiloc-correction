@@ -6,7 +6,7 @@ let camion = document.getElementById("camion");
 let velo = document.getElementById("velo");
 let vaisseau = document.getElementById("vaisseau");
 
-/* VARIABLE RECUPERATION FORMULAIRE VEHICULES */
+/* VARIABLE RECUPERATION FORMULAIRE VEHICULES Allan**/
 
 let moto1 = document.getElementById("moto1");
 let voiture1 = document.getElementById("voiture1");
@@ -14,7 +14,7 @@ let camion1 = document.getElementById("camion1");
 let velo1 = document.getElementById("velo1");
 let vaisseau1 = document.getElementById("vaisseau1");
 
-// CHANGEMENT COULEUR GAMMES VEHICULES
+// CHANGEMENT COULEUR GAMMES VEHICULES Allan*
 
 moto.addEventListener("click", () => {
   document.getElementById("voiture").src = "images/icons/Car-2.svg";
@@ -53,7 +53,7 @@ vaisseau.addEventListener("click", () => {
   document.getElementById("vaisseau").src = "images/icons/Space Fighter-1.svg";
 });
 
-// CHANGEMENT COULEUR  VEHICULES
+// CHANGEMENT COULEUR  VEHICULES Allan*
 
 moto1.addEventListener("click", () => {
   document.getElementById("voiture1").src = "images/icons/Car-2.svg";
@@ -127,9 +127,9 @@ function loadtruck() {
 
     let structureTruck = `
     <div class="mx-5 clio-card">
-        <img src="images/vehicles/trucks/${modele}.png" width="200" alt="vehicle">
+        <img src="images/vehicles/trucks/${modele}.png" width="200" alt="camion">
         <p>
-            <h4>${(marque, modele)}</h4>
+            <h4>${(marque)} ${(modele)}</h4>
             à partir de ${prix}€
         </p>
     </div>
@@ -175,9 +175,9 @@ function loaddirt() {
 
     let structureDirt = `
     <div class="mx-5 clio-card">
-        <img src="images/${modele}.png" width="200" alt="Renault Clio">
+        <img src="images/vehicles/motorbikes/${modele}.png" width="200" alt="moto">
         <p>
-            <h4>${(marque, modele)}</h4>
+        <h4>${(marque)} ${(modele)}</h4>
             à partir de ${prix}€
         </p>
     </div>
@@ -190,61 +190,58 @@ document.getElementById("moto").addEventListener("click",(e) =>{
 }) ;
 
 
-/*voitures : Yohann et Jérôme*/
 
-let voitures = [
+/*vélos François*/
+
+let velotable = [
   {
-      nom: "fiat 500",
-      couleur: ["gris", "blanc"],
-      prix: { location: 70, vente: 19000 },
-      href: "img/fiat500.png",
+    marque: "Peugeot ",
+    modele: "Lr01",
+    prix: 50,
   },
   {
-      nom: "mclaren ",
-      couleur: ["couleur starsky", "noir "],
-      prix: { location: 1670, vente:150000 },
-      href: "img/mclaren.png",
+    marque: "Wayscral",
+    modele: "Anyway e200",
+    prix: 150,
   },
   {
-      nom: "subaru",
-      couleur: ["rouge", "noir "],
-      prix: { location: 150, vente: 16900 },
-      href: "img/subaru.png",
+    marque: "Cloot",
+    modele: "Project level x rotor",
+    prix: 25,
   },
   {
-      nom: "mercedes classe-c ",
-      couleur: ["blanc", "noir "],
-      prix: { location: 150, vente: 62000 },
-      href: "img/mercedes.png",
-
+    marque: "Cipollini",
+    modele: "Dolomia",
+    prix: 250,
   },
-
-
 ];
 
-function voitureRefresh() {
-  let garage = document.querySelector("#garage");
-  garage.innerHTML = "";
-  let taille = `"80px"`
+function loadvelo() {
+  document.getElementById("vehicules").innerHTML = "";
 
-  voitures.map((voiture) => {
-      let card = `
-      <div class="voiture" >
-          <img 
-              src=" ${voiture.href}"
-              class="img1 dflex d-inline" alt="Renault Clio m-5">
+  velotable.map((velo) => {
+    let marque = velo.marque;
+    let modele = velo.modele;
+    let prix = velo.prix;
+
+    let structureVelo = `
+      <div class="mx-5 clio-card">
+          <img src="images/vehicles/bicycles/${modele}.png" width="200" alt="vélo">
           <p>
-              <h4>${voiture.nom}</h4>
-              à partir de ${voiture.prix.vente}€ a la vente <br> location ${voiture.prix.location} 
+              <h4>${(marque)} ${(modele)}</h4>
+              à partir de ${prix}€
           </p>
       </div>
   `;
-      garage.innerHTML += card;
-  })
+    document.getElementById("vehicules").innerHTML += structureVelo;
+  });
 }
+document.getElementById("velo").addEventListener("click",(e) =>{
+  loadvelo()
+});
 
 
-/*vaisseau : Thierry*/
+/*vaisseaux : Thierry*/
 
 let vaisseaux = [
   {
@@ -269,7 +266,7 @@ let vaisseaux = [
   },
 ];
 
-function vaisseaux() {
+function loadvaisseaux() {
   document.getElementById("vehicules").innerHTML = "";
 
   vaisseaux.map((vaisseau) => {
@@ -279,16 +276,75 @@ function vaisseaux() {
 
     let structureVaisseaux = `
     <div class="mx-5 clio-card">
-        <img src="images/vehicles/vaisseau/${modele}.png" width="200" alt="vehicle">
+        <img src="images/vehicles/spaceships/${modele}.webp" width="200" alt="vaisseau spatial">
         <p>
-            <h4>${(marque, modele)}</h4>
+            <h4>${(marque)} ${(modele)}</h4>
             à partir de ${prix}€
         </p>
     </div>
 `;
-    document.getElementById("vehicules").innerHTML += structureVaisseau;
+    document.getElementById("vehicules").innerHTML += structureVaisseaux;
   });
 }
 document.getElementById("vaisseau").addEventListener("click",(e) =>{
   loadvaisseaux()
-}) ;
+}) ; 
+
+
+/*voitures : Yohann, Jérôme et Valentin. Ce code n'est pas opérationnel car la méthode est différente de celle utilisée dans le reste du document*/
+
+let voitures = [
+  {
+      nom: "fiat 500",
+      couleur: ["gris", "blanc"],
+      prix: { location: 70, vente: 19000 },
+      href: "images/vehicles/cars/fiat500.png",
+  },
+  {
+      nom: "mclaren ",
+      couleur: ["couleur starsky", "noir "],
+      prix: { location: 1670, vente:150000 },
+      href: "images/vehicles/cars/mclaren.png",
+  },
+  {
+      nom: "subaru",
+      couleur: ["rouge", "noir "],
+      prix: { location: 150, vente: 16900 },
+      href: "images/vehicles/cars/subaru.png",
+  },
+  {
+      nom: "mercedes classe-c ",
+      couleur: ["blanc", "noir "],
+      prix: { location: 150, vente: 62000 },
+      href: "images/vehicles/cars/mercedes.png",
+
+  },
+
+
+];
+
+function voitureRefresh() {
+  let garage = document.querySelector("#garage");
+  garage.innerHTML = "";
+  let taille = `"80px"`
+
+  voitures.map((voiture) => {
+      let card = `
+      <div class="voiture" >
+          <img 
+              src=" ${voiture.href}"
+              class="img1 dflex d-inline" alt="voiture">
+          <p>
+              <h4>${voiture.nom}</h4>
+              à partir de ${voiture.prix.vente}€ a la vente <br> location ${voiture.prix.location} 
+          </p>
+      </div>
+  `;
+      garage.innerHTML += card;
+  })
+}
+
+
+
+
+
