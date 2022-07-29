@@ -242,3 +242,53 @@ function voitureRefresh() {
       garage.innerHTML += card;
   })
 }
+
+
+/*vaisseau : Thierry*/
+
+let vaisseaux = [
+  {
+    marque: "Starwars",
+    modele: "Faucon",
+    prix: 5000,
+  },
+  {
+    marque: "Starwars",
+    modele: "Tie Fighter",
+    prix: 2500,
+  },
+  {
+    marque: "Starwars",
+    modele: "X Wing",
+    prix: 2700,
+  },
+  {
+    marque: "Starwars",
+    modele: "Nubian",
+    prix: 2200,
+  },
+];
+
+function vaisseaux() {
+  document.getElementById("vehicules").innerHTML = "";
+
+  vaisseaux.map((vaisseau) => {
+    let marque = vaisseau.marque;
+    let modele = vaisseau.modele;
+    let prix = vaisseau.prix;
+
+    let structureVaisseaux = `
+    <div class="mx-5 clio-card">
+        <img src="images/vehicles/vaisseau/${modele}.png" width="200" alt="vehicle">
+        <p>
+            <h4>${(marque, modele)}</h4>
+            à partir de ${prix}€
+        </p>
+    </div>
+`;
+    document.getElementById("vehicules").innerHTML += structureVaisseau;
+  });
+}
+document.getElementById("vaisseau").addEventListener("click",(e) =>{
+  loadvaisseaux()
+}) ;
