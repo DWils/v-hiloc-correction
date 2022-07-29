@@ -17,79 +17,79 @@ let vaisseau1 = document.getElementById("vaisseau1");
 // CHANGEMENT COULEUR GAMMES VEHICULES
 
 moto.addEventListener("click", () => {
-  document.getElementById("voiture").src = "images/Car-2.svg";
-  document.getElementById("camion").src = "images/Truck-2.svg";
-  document.getElementById("moto").src = "images/Dirt Bike-1.svg";
-  document.getElementById("velo").src = "images/Bicycle-2.svg";
-  document.getElementById("vaisseau").src = "images/Space Fighter-2.svg";
+  document.getElementById("voiture").src = "images/icons/Car-2.svg";
+  document.getElementById("camion").src = "images/icons/Truck-2.svg";
+  document.getElementById("moto").src = "images/icons/Dirt Bike-1.svg";
+  document.getElementById("velo").src = "images/icons/Bicycle-2.svg";
+  document.getElementById("vaisseau").src = "images/icons/Space Fighter-2.svg";
 });
 
 voiture.addEventListener("click", () => {
-  document.getElementById("voiture").src = "images/Car-1.svg";
-  document.getElementById("camion").src = "images/Truck-2.svg";
-  document.getElementById("moto").src = "images/Dirt Bike-2.svg";
-  document.getElementById("velo").src = "images/Bicycle-2.svg";
-  document.getElementById("vaisseau").src = "images/Space Fighter-2.svg";
+  document.getElementById("voiture").src = "images/icons/Car-1.svg";
+  document.getElementById("camion").src = "images/icons/Truck-2.svg";
+  document.getElementById("moto").src = "images/icons/Dirt Bike-2.svg";
+  document.getElementById("velo").src = "images/icons/Bicycle-2.svg";
+  document.getElementById("vaisseau").src = "images/icons/Space Fighter-2.svg";
 });
 camion.addEventListener("click", () => {
-  document.getElementById("voiture").src = "images/Car-2.svg";
-  document.getElementById("camion").src = "images/Truck-1.svg";
-  document.getElementById("moto").src = "images/Dirt Bike-2.svg";
-  document.getElementById("velo").src = "images/Bicycle-2.svg";
-  document.getElementById("vaisseau").src = "images/Space Fighter-2.svg";
+  document.getElementById("voiture").src = "images/icons/Car-2.svg";
+  document.getElementById("camion").src = "images/icons/Truck-1.svg";
+  document.getElementById("moto").src = "images/icons/Dirt Bike-2.svg";
+  document.getElementById("velo").src = "images/icons/Bicycle-2.svg";
+  document.getElementById("vaisseau").src = "images/icons/Space Fighter-2.svg";
 });
 velo.addEventListener("click", () => {
-  document.getElementById("voiture").src = "images/Car-2.svg";
-  document.getElementById("camion").src = "images/Truck-2.svg";
-  document.getElementById("moto").src = "images/Dirt Bike-2.svg";
-  document.getElementById("velo").src = "images/Bicycle.svg";
-  document.getElementById("vaisseau").src = "images/Space Fighter-2.svg";
+  document.getElementById("voiture").src = "images/icons/Car-2.svg";
+  document.getElementById("camion").src = "images/icons/Truck-2.svg";
+  document.getElementById("moto").src = "images/icons/Dirt Bike-2.svg";
+  document.getElementById("velo").src = "images/icons/Bicycle.svg";
+  document.getElementById("vaisseau").src = "images/icons/Space Fighter-2.svg";
 });
 vaisseau.addEventListener("click", () => {
-  document.getElementById("voiture").src = "images/Car-2.svg";
-  document.getElementById("camion").src = "images/Truck-2.svg";
-  document.getElementById("moto").src = "images/Dirt Bike-2.svg";
-  document.getElementById("velo").src = "images/Bicycle-2.svg";
-  document.getElementById("vaisseau").src = "images/Space Fighter-1.svg";
+  document.getElementById("voiture").src = "images/icons/Car-2.svg";
+  document.getElementById("camion").src = "images/icons/Truck-2.svg";
+  document.getElementById("moto").src = "images/icons/Dirt Bike-2.svg";
+  document.getElementById("velo").src = "images/icons/Bicycle-2.svg";
+  document.getElementById("vaisseau").src = "images/icons/Space Fighter-1.svg";
 });
 
 // CHANGEMENT COULEUR  VEHICULES
 
 moto1.addEventListener("click", () => {
-  document.getElementById("voiture1").src = "images/Car-2.svg";
-  document.getElementById("camion1").src = "images/Truck-2.svg";
-  document.getElementById("moto1").src = "images/Dirt Bike-1.svg";
-  document.getElementById("velo1").src = "images/Bicycle-2.svg";
-  document.getElementById("vaisseau1").src = "images/Space Fighter-2.svg";
+  document.getElementById("voiture1").src = "images/icons/Car-2.svg";
+  document.getElementById("camion1").src = "images/icons/Truck-2.svg";
+  document.getElementById("moto1").src = "images/icons/Dirt Bike-1.svg";
+  document.getElementById("velo1").src = "images/icons/Bicycle-2.svg";
+  document.getElementById("vaisseau1").src = "images/icons/Space Fighter-2.svg";
 });
 
 voiture1.addEventListener("click", () => {
-    document.getElementById("voiture1").src = "images/Car-1.svg";
-    document.getElementById("camion1").src = "images/Truck-2.svg";
-    document.getElementById("moto1").src = "images/Dirt Bike-2.svg";
-    document.getElementById("velo1").src = "images/Bicycle-2.svg";
-    document.getElementById("vaisseau1").src = "images/Space Fighter-2.svg";
+    document.getElementById("voiture1").src = "images/icons/Car-1.svg";
+    document.getElementById("camion1").src = "images/icons/Truck-2.svg";
+    document.getElementById("moto1").src = "images/icons/Dirt Bike-2.svg";
+    document.getElementById("velo1").src = "images/icons/Bicycle-2.svg";
+    document.getElementById("vaisseau1").src = "images/icons/Space Fighter-2.svg";
 });
 camion1.addEventListener("click", () => {
-    document.getElementById("voiture1").src = "images/Car-2.svg";
-    document.getElementById("camion1").src = "images/Truck-1.svg";
-    document.getElementById("moto1").src = "images/Dirt Bike-2.svg";
-    document.getElementById("velo1").src = "images/Bicycle-2.svg";
-    document.getElementById("vaisseau1").src = "images/Space Fighter-2.svg";
+    document.getElementById("voiture1").src = "images/icons/Car-2.svg";
+    document.getElementById("camion1").src = "images/icons/Truck-1.svg";
+    document.getElementById("moto1").src = "images/icons/Dirt Bike-2.svg";
+    document.getElementById("velo1").src = "images/icons/Bicycle-2.svg";
+    document.getElementById("vaisseau1").src = "images/icons/Space Fighter-2.svg";
 });
 velo1.addEventListener("click", () => {
-    document.getElementById("voiture1").src = "images/Car-2.svg";
-    document.getElementById("camion1").src = "images/Truck-2.svg";
-    document.getElementById("moto1").src = "images/Dirt Bike-2.svg";
-    document.getElementById("velo1").src = "images/Bicycle.svg";
-    document.getElementById("vaisseau1").src = "images/Space Fighter-2.svg";
+    document.getElementById("voiture1").src = "images/icons/Car-2.svg";
+    document.getElementById("camion1").src = "images/icons/Truck-2.svg";
+    document.getElementById("moto1").src = "images/icons/Dirt Bike-2.svg";
+    document.getElementById("velo1").src = "images/icons/Bicycle.svg";
+    document.getElementById("vaisseau1").src = "images/icons/Space Fighter-2.svg";
 });
 vaisseau1.addEventListener("click", () => {
-    document.getElementById("voiture1").src = "images/Car-2.svg";
-    document.getElementById("camion1").src = "images/Truck-2.svg";
-    document.getElementById("moto1").src = "images/Dirt Bike-2.svg";
-    document.getElementById("velo1").src = "images/Bicycle-2.svg";
-    document.getElementById("vaisseau1").src = "images/Space Fighter-1.svg";
+    document.getElementById("voiture1").src = "images/icons/Car-2.svg";
+    document.getElementById("camion1").src = "images/icons/Truck-2.svg";
+    document.getElementById("moto1").src = "images/icons/Dirt Bike-2.svg";
+    document.getElementById("velo1").src = "images/icons/Bicycle-2.svg";
+    document.getElementById("vaisseau1").src = "images/icons/Space Fighter-1.svg";
 });
 
 /*camions : Emmanuel et Marina*/
@@ -127,7 +127,7 @@ function loadtruck() {
 
     let structureTruck = `
     <div class="mx-5 clio-card">
-        <img src="images/${modele}.png" width="200" alt="Renault Clio">
+        <img src="images/vehicles/trucks/${modele}.png" width="200" alt="vehicle">
         <p>
             <h4>${(marque, modele)}</h4>
             à partir de ${prix}€
