@@ -1,4 +1,4 @@
-/* VARIABLE RECUPERATION GAMMES VEHICULES */
+/* VARIABLE RECUPERATION GAMMES VEHICULES Allan*/
 
 let moto = document.getElementById("moto");
 let voiture = document.getElementById("voiture");
@@ -92,7 +92,7 @@ vaisseau1.addEventListener("click", () => {
     document.getElementById("vaisseau1").src = "images/Space Fighter-1.svg";
 });
 
-/*camions*/
+/*camions : Emmanuel et Marina*/
 
 let trucktable = [
   {
@@ -141,6 +141,104 @@ document.getElementById("camion").addEventListener("click",(e) =>{
   loadtruck()
 }) ;
 
+/*motos : Dalian*/
+let dirttable = [
+  {
+    marque: "Suzuki",
+    modele: "Hayabusa",
+    prix: 250,
+  },
+  {
+    marque: "Yamaha",
+    modele: "MT-10",
+    prix: 230,
+  },
+  {
+    marque: "Kawaksi",
+    modele: "Ninja",
+    prix: 120,
+  },
+  {
+    marque: "Kawaksi",
+    modele: "gn",
+    prix: 100,
+  },
+];
+
+function loaddirt() {
+  document.getElementById("vehicules").innerHTML = "";
+
+  dirttable.map((dirt) => {
+    let marque = dirt.marque;
+    let modele = dirt.modele;
+    let prix = dirt.prix;
+
+    let structureDirt = `
+    <div class="mx-5 clio-card">
+        <img src="images/${modele}.png" width="200" alt="Renault Clio">
+        <p>
+            <h4>${(marque, modele)}</h4>
+            à partir de ${prix}€
+        </p>
+    </div>
+`;
+    document.getElementById("vehicules").innerHTML += structureDirt;
+  });
+}
+document.getElementById("moto").addEventListener("click",(e) =>{
+  loaddirt()
+}) ;
 
 
+/*voitures : Yohann et Jérôme*/
 
+let voitures = [
+  {
+      nom: "fiat 500",
+      couleur: ["gris", "blanc"],
+      prix: { location: 70, vente: 19000 },
+      href: "img/fiat500.png",
+  },
+  {
+      nom: "mclaren ",
+      couleur: ["couleur starsky", "noir "],
+      prix: { location: 1670, vente:150000 },
+      href: "img/mclaren.png",
+  },
+  {
+      nom: "subaru",
+      couleur: ["rouge", "noir "],
+      prix: { location: 150, vente: 16900 },
+      href: "img/subaru.png",
+  },
+  {
+      nom: "mercedes classe-c ",
+      couleur: ["blanc", "noir "],
+      prix: { location: 150, vente: 62000 },
+      href: "img/mercedes.png",
+
+  },
+
+
+];
+
+function voitureRefresh() {
+  let garage = document.querySelector("#garage");
+  garage.innerHTML = "";
+  let taille = `"80px"`
+
+  voitures.map((voiture) => {
+      let card = `
+      <div class="voiture" >
+          <img 
+              src=" ${voiture.href}"
+              class="img1 dflex d-inline" alt="Renault Clio m-5">
+          <p>
+              <h4>${voiture.nom}</h4>
+              à partir de ${voiture.prix.vente}€ a la vente <br> location ${voiture.prix.location} 
+          </p>
+      </div>
+  `;
+      garage.innerHTML += card;
+  })
+}
